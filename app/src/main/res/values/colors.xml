@@ -2,5 +2,14 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#009688</color>
+
+    <color name="lime500">#CDDC39</color>
+    <color name="brown500">#795548</color>
+
+    <color name="hitam">#000000</color>
+    <color name="putih">#FFFFFF</color>
+    <color name="abu">#4D4D4D</color>
+
+    <color name="warna">#88AA22</color>
 </resources>
