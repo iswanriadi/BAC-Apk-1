@@ -18,11 +18,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mTvUsername = (TextView) findViewById(R.id.tv_username);
-        mTvPesan = (TextView) findViewById(R.id.tv_pesan);
-        mBtnLogout = (Button) findViewById(R.id.btn_logout);
+        mTvUsername = findViewById(R.id.tv_username);
+        mTvPesan = findViewById(R.id.tv_pesan);
+        mBtnLogout = findViewById(R.id.btn_logout);
 
-        if(getIntent().getStringExtra("username") != null && getIntent().getStringExtra("pesan") != null) {
+        if (getIntent().getStringExtra("username") != null && getIntent().getStringExtra("pesan") != null) {
             username = getIntent().getStringExtra("username");
             pesan = getIntent().getStringExtra("pesan");
 
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 mTvPesan.append(pesan);
             }
-        }else {
+        } else {
             mTvUsername.setText("Tidak ada intent extra");
             mTvPesan.setText("Tidak ada intent extra");
         }
